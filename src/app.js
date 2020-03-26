@@ -1,6 +1,6 @@
 import router from 'umi/router';
 export const dva = {
-    config: {
+    config: { 
         onError(err) {
             err.preventDefault();
             console.error(err.message);
@@ -10,7 +10,7 @@ export const dva = {
 
 //用于运行时修改路由。和 render 配合使用，请求服务端根据响应动态更新路由
 export function patchRoutes(routes) {
-    
+     
 }
 // 用于改写把整个应用 render 到 dom 树里的方法。
 export async function render(oldRender) {
